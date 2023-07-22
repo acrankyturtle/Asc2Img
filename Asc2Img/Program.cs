@@ -52,13 +52,19 @@ public static class Program
 			Console.Write(prompt);
 			Console.Write(": ");
 
-			var fileName = Path.GetFullPath(Console.ReadLine() ?? throw new FileNotFoundException());
+			var input = Console.ReadLine() ?? throw new NullReferenceException();
 
-			if (!mustExist || File.Exists(fileName))
-				return fileName;
+			if (!string.IsNullOrWhiteSpace(input))
+			{
+				var fileName = Path.GetFullPath(input);
+
+				if (!mustExist || File.Exists(fileName))
+					return fileName;
+			}
 
 			Console.WriteLine("File does not exist.");
 			Console.WriteLine();
+			
 		}
 	}
 }
