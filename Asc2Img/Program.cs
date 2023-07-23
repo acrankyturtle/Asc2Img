@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using Esri;
 
 namespace Asc2Img;
 
@@ -27,7 +26,7 @@ public static class Program
 		using var reader = new StreamReader(fileStream);
 
 		// read esri data
-		var esri = EsriReader.Read(reader);
+		var esri = Esri.Read(reader);
 
 		// convert esri data to image
 		var bitmap = ImageFromSamples.FromValues(esri.Values);

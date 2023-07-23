@@ -1,6 +1,6 @@
-namespace Esri;
+namespace Asc2Img;
 
-public static class EsriReader
+public static class Esri
 {
 	public static EsriFile Read(TextReader reader)
 	{
