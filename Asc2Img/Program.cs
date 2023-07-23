@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Drawing;
 
 namespace Asc2Img;
 
@@ -29,7 +30,7 @@ public static class Program
 		var esri = Esri.Read(reader);
 
 		// convert esri data to image
-		var bitmap = ImageFromSamples.FromValues(esri.Values);
+		using var bitmap = HeightMap.CreateImage(esri.Values, default);
 
 		// write to destination
 		bitmap.Save(destinationFile);
