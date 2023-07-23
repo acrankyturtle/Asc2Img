@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <RootNamespace>Asc2Img_Gui</RootNamespace>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Asc2Img\Asc2Img.csproj" />
+      <ProjectReference Include="..\Esri\Esri.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="PreviewRenderer2.cs">
+        <SubType>Component</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>

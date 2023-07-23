@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asc2Img", "Asc2Img\Asc2Img.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri", "Esri\Esri.csproj", "{6657DFB1-7592-486C-8A93-618736B1A4A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asc2Img-Gui", "Asc2Img-Gui\Asc2Img-Gui.csproj", "{34E9C445-B97F-4EEC-8976-C172D878EF9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{6657DFB1-7592-486C-8A93-618736B1A4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6657DFB1-7592-486C-8A93-618736B1A4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6657DFB1-7592-486C-8A93-618736B1A4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E9C445-B97F-4EEC-8976-C172D878EF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E9C445-B97F-4EEC-8976-C172D878EF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E9C445-B97F-4EEC-8976-C172D878EF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E9C445-B97F-4EEC-8976-C172D878EF9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
