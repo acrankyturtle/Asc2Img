@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Esri;
 
 namespace Asc2Img;
 
